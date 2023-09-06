@@ -1,6 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+*{
+    margin: 3% 0%;
+    font-family: "Be Vietnam pro";
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.cards h2{
+    color:#232851;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
+
+}
+
+.contenedores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin:5px;
+    padding: 5px;
+    width: 100%vw;
+    
+}
+
+.contenedores h3{
+    text-align: center;
+    padding-top: 30px;
+    color:#232851;
+}
+.jugadores {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
+    width: 460px;
+}
+
+.jugadores img{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: calc(50%);
+    top: -50px;
+}
+
+.jugadores p {
+    text-align: center;
+    color:gray;
+    
+}
+
+.cards button {
+    border-radius: 40px;
+    background-color: #8B48BF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 30px;
+
+}
+
+
+.get_know{
+    display: flex;
+    flex-direction: column;
+    background-color: #3CDDF3;
+    width: 100vw;
+    margin: 0px;
+}
+.get_know h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+.get_know div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.get_know button {
+    border-radius: 40px;
+    background-color: #232851;
+    color: white;
+    font-size: 12px;
+    border: none;
+    height: 50px;
+    width: 150px;
+
+    
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+}
+.input_form{
+    display: flex;
+    border-radius: 40px;
+    font-size: 12px;
+    border: none;
+    height: 45px;
+    width: 300px;
+    justify-content: center;
+}
+
+.boton_submit {
+    border-radius: 40px;
+    background-color: #8B48BF;
+    color: white;
+    font-size: 12px;
+    border: none;
+    height: 45px;
+    width: 70px;
+}
+    
 footer {
     display: flex;
-    background-color: black;
-    width: 50px;
-    height: 30px;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color:#1E1E26; 
+    justify-content: center;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+
+.enlaces a {
+    color: white;
+    text-decoration: none; 
+}
+.enlaces{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.enlaces ul {
+    display: flex;
+    width: 100%;
+    margin: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enlaces li {
+    color: white;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.redes_sociales {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div {
+    align-content: center;
+}
+ul {
+    list-style: none;
+} 
+
+.derechos {
+    color: rgb(249,249,249);
+}
+
+@media(min-width:481px){
+    .cards h2{
+        font-size: 32px;  
+    }
+    .jugadores {
+        margin-left: 0px;
+        margin-right: 0px;             
+    }
+    .get_know{
+        background-color:  #8B48BF;
+        color: white;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .get_know button {
+        border-radius: 40px;
+        background-color: white;
+        color:  #8B48BF;
+        justify-content: flex-end;
+       
+    }
+
+    .get_know h2{
+        justify-content: flex-start;
+        width: 450px;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap:wrap; 
+        height: 300px;  
+    }
+    form{
+        width: 95%;
+        order:3;
+    }
+    
+
+    .enlaces{
+        width: 30%;
+        order:-1; 
+    }
+    .redes_sociales{
+        width: 25%;
+    }
+    .logo{
+        width: 25%;
+        order:-2;
+    }
+    
 }
