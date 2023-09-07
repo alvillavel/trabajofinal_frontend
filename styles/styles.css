@@ -1,6 +1,218 @@
-footer {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+header{
     display: flex;
-    background-color: black;
-    width: 50px;
-    height: 30px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin:10px;
+    background-image: url('/img/padel-intro.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90vw;
+    height: 30vh;
+}
+
+h1{    
+    color:#232C50;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    width: 90%;
+    margin: 10px;
+    /*display: flex;*/
+    /*display: inline-block;*/
+}
+
+menu{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*.caja1 {
+    width: 90%;
+}*/
+
+.sombra-p{
+    display: flex;
+    text-align: right;
+    font-weight: bold;
+    width: 90%;
+    margin: 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content:flex-start;
+
+}
+
+button{
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 40px;
+    color: #FFFFFF;
+    /*display: flex;
+    display: inline-block;*/
+    padding: 10px 15px;
+    position:absolute;
+    /*margin-left: 20px;*/
+}
+
+.boton-contact{
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin-top: 20px;
+    /*display:flex;*/
+    position:relative;
+    left: 80%;
+    margin-right: 20px;
+    /*margin-bottom: 20px;*/
+    margin-bottom: 10px;
+}
+
+.different{
+    background-color: #3CDDF3;
+    padding: 20px 20px;
+}
+
+.white-tex{
+    color: white;
+    margin-top: 50px;
+    
+}
+
+
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.parrafos-numerados {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align:left;
+    margin-left: 10px;
+    
+}
+.parrafos-numerados p {
+    color: #B3B2B7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    /*width: 100%vw;*/
+}
+
+
+.titulos-centrales {
+    background-color:  #dcccec;
+    color: #323851;
+    text-align: center;
+    margin-left: 35px;
+    padding: 10px;
+    /*width: 100%;*/
+
+}
+
+
+@media (max-width: 480px) {
+/* Nav permite ocultar el texto del menu */
+    header .nav-var ul li, .boton-contact1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        padding: 20px;
+        background-color: white;
+        width: 50%;
+        display: none;
+    }
+
+}
+
+@media (min-width :481px) {
+    .different {
+        background-color: #8B48BF;
+        display: flex;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+
+    }
+    .caja1 {
+        display: flex;
+        flex-direction: row;
+        /*align-items:left;*/
+    }
+    header .hamburger {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        padding: 20px;
+        background-color: white;
+        width: 50%;
+        display: none;
+    }
+    header .boton-contact1 {
+        display: flex;
+        align-items:flex-start;
+        position: relative;
+    }
+    li a {
+        color: #242E52;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+    }
+
+    .titulos-centrales {
+        background-color: white;
+    }
+
+    .contenedor1, .contenedor2, .contenedor3 {
+        width: 20vw;
+        justify-content: space-around;
+        margin: 15px;
+
+
+    }
+
+    .parrafos-numerados{
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        
+
+    }
+
+
+
+    
+
+
+
 }
