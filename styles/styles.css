@@ -445,14 +445,13 @@ font-weight: rgb(41, 2, 2);
     }
 
     .parrafos-numerados{
-        /*background-color: #FAFAFA; */
+        background-color: #FAFAFA; 
         position: relative;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         width: 100%vw;
         height: 500px;
-        /*z-index: 1;*/
     }
 
     .contenedor1 {
