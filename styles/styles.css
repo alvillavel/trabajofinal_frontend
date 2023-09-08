@@ -139,8 +139,8 @@ header  .hamburger:hover{
 }
 
 
-@media (max-width: 480px) {
-/* Nav permite ocultar el texto del menu */
+/*@media (max-width: 480px) {
+
     header .nav-var ul li, .boton-contact1 {
         position: absolute;
         right: 0;
@@ -151,9 +151,19 @@ header  .hamburger:hover{
         display: none;
     }
 
-}
+}*/
 
 @media (min-width :481px) {
+    header .nav-var ul li, .boton-contact1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        padding: 20px;
+        background-color: white;
+        width: 50%;
+        display: none;
+    }
+
     .different {
         background-color: #8B48BF;
         display: flex;

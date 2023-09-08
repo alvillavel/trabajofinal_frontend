@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Final</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,500&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 <header>
@@ -70,59 +67,66 @@
                 consequat dolor.</p>
         </div>
     </section>
-    <section>
+    <section class="cards">
         <h2>
             Best of the month
         </h2>
-        <div>
-            <img src="./img/avatar-sanyo.png">
-            <h3>Sanyo</h3>
-            <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
-                ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus.</p>
-            <img src="./img/avatar.lebron.png">  
-            <h3>Lebron</h3>
-            <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
-                ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus.</p>
-            <img src="./img/avatar-navarro.png">   
-            <h3>Navarro</h3>
-            <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
-                ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus.</p>
-        </div>
+        <div class="contenedores">
+            <div class="jugadores" id="sanyo" alt="Jugador Sanyo">
+                <img src="./img/avatar-sanyo.png">
+                <h3>Sanyo</h3>
+                <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
+                    ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.</p>
+            </div>
+            <div class="jugadores" alt="Jugador Lebron">        
+                <img src="./img/avatar.lebron.png">  
+                <h3>Lebron</h3>
+                <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
+                    ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.</p>
+            </div>
+            <div class="jugadores" id="navarro" alt="Jugador Navarro">  
+                <img src="./img/avatar-navarro.png">   
+                <h3>Navarro</h3>
+                <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, 
+                    ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.</p>
+            </div>
+        </div>    
         <div>
             <button type="button">More</button>
         </div>
+        
     </section>
-    <section>
+    <section class="get_know">
         <h2>Get to know the best teams of the year</h2>
-        <div>  <button type="button">Go for it</button></div>
+        <div><button type="button">Go for it</button></div>
     </section>
     <footer>
-        <div>
+        <div class="informacion">
             <form action="#" method="POST">
                 <label for="inbox"></label>
-                <input type="text" name="inbox" value="inbox">
-                <input type="submit" value="GO">
+                <input type="text" name="inbox" class="input_form" placeholder="Update in your inbox..." >
+                <input type="submit" value="GO" class="boton_submit">
             </form>
         </div>
-       <div>
-            <nav>
+        <nav class="enlaces">
                 <ul>
                     <li>
                         <a href="#">Home</a>
                         <a href="#">Pricing</a>
                         <a href="#">Products</a>
                         <a href="#">About Us</a>
+                    <li>
+                    <li>
                         <a href="#">Trainning</a>
                         <a href="#">Community</a>
                         <a href="#">Privacity Policy</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        <div>
+        </nav>
+        <div class="redes_sociales">
             <!--Aca van los iconos de redes sociales-->
             <img src="img/icon-facebook.svg">
             <img src="./img/icon-youtube.svg">
@@ -130,11 +134,11 @@
             <img src="./img/icon-pinterest.svg">
             <img src="./img/icon-instagram.svg">   
         </div>
-        <div>
+        <div class="logo">
             <img src="./img/logo.svg">
         </div>       
         <div>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p class="derechos">Copyright 2020. All Rights Reserved</p>
         </div>
     </main>
     </footer>
